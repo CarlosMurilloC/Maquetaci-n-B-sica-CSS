@@ -1,0 +1,156 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* Capa oscura sobre la imagen */
+        url('imagen6.jpg'); /* Imagen de fondo principal */
+    background-size: cover, cover; /* Cubrimos toda la pantalla con ambas imágenes */
+    background-position: center, center;
+    background-repeat: no-repeat;
+    color: #e5e5e5; /* Blanco grisáceo más claro */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Sombra para mejorar la legibilidad */
+    min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+    background-color: rgba(34, 49, 63, 0.9); /* Un poco más oscuro */
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 3px solid #2ecc71;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra más marcada */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem; /* Título grande y llamativo */
+    font-weight: 600;
+}
+
+/* Menú de navegación */
+.menu {
+    list-style: none;
+    padding: 10px 0;
+    background-color: rgba(45, 52, 54, 0.95); /* Fondo aún más oscuro */
+    margin: 0;
+    background-image: url('imagen6.jpg');
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 15px;
+    transition: color 0.3s ease; /* Transición suave al hover */
+}
+
+.menu li a:hover {
+    color: #2ecc71; /* Color de hover llamativo */
+}
+
+/* Hero Section */
+.hero {
+    background-color: rgba(40, 44, 52, 0.85); /* Fondo oscuro con opacidad para mayor contraste */
+    padding: 60px 0;
+    text-align: center;
+    color: #f0f0f0; /* Texto claro */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Artículos */
+.articles {
+    display: flex;
+    justify-content: center; /* Centramos los artículos */
+    flex-wrap: wrap;
+    background-color: #333; /* Fondo oscuro */
+    padding: 40px 0;
+    gap: 30px; /* Espaciado elegante */
+    color: #f5f5f5; /* Texto claro */
+}
+
+.articles article {
+    flex-basis: calc(50% - 30px);
+    background-color: #444; /* Fondo oscuro de los artículos */
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.articles article:hover {
+    transform: translateY(-10px); /* Levantamos el artículo al hacer hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Mayor sombra */
+}
+
+.articles img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto; /* Centramos la imagen */
+}
+
+/* Aside */
+aside {
+    background-color: #444; /* Fondo oscuro del aside */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #f5f5f5; /* Texto claro */
+}
+
+/* Footer */
+footer {
+    background-color: #2d3436;
+    color: #f5f5f5;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .menu li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .articles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .articles article {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    header h1 {
+        font-size: 2rem; /* Ajustamos el tamaño del título para pantallas más pequeñas */
+    }
+}
